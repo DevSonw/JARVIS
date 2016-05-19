@@ -7,24 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C60CC09A1CEC3E4F00EFFD6B /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C60CC0991CEC3E4F00EFFD6B /* JavaScriptCore.framework */; };
+		C60CC09E1CEC3EFC00EFFD6B /* JVSContext.m in Sources */ = {isa = PBXBuildFile; fileRef = C60CC09D1CEC3EFC00EFFD6B /* JVSContext.m */; };
 		C6F147F61CEB751D00434A7A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C6F147F51CEB751D00434A7A /* main.m */; };
 		C6F147F91CEB751D00434A7A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C6F147F81CEB751D00434A7A /* AppDelegate.m */; };
 		C6F147FC1CEB751D00434A7A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6F147FB1CEB751D00434A7A /* ViewController.m */; };
-		C6F147FF1CEB751D00434A7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6F147FD1CEB751D00434A7A /* Main.storyboard */; };
 		C6F148011CEB751D00434A7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6F148001CEB751D00434A7A /* Assets.xcassets */; };
-		C6F148041CEB751D00434A7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6F148021CEB751D00434A7A /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C60CC0991CEC3E4F00EFFD6B /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		C60CC09C1CEC3EFC00EFFD6B /* JVSContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JVSContext.h; sourceTree = "<group>"; };
+		C60CC09D1CEC3EFC00EFFD6B /* JVSContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JVSContext.m; sourceTree = "<group>"; };
 		C6F147F11CEB751D00434A7A /* JARVIS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JARVIS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6F147F51CEB751D00434A7A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C6F147F71CEB751D00434A7A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C6F147F81CEB751D00434A7A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		C6F147FA1CEB751D00434A7A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		C6F147FB1CEB751D00434A7A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		C6F147FE1CEB751D00434A7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C6F148001CEB751D00434A7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		C6F148031CEB751D00434A7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C6F148051CEB751D00434A7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -33,12 +34,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C60CC09A1CEC3E4F00EFFD6B /* JavaScriptCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C60CC0981CEC3E3A00EFFD6B /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				C60CC0991CEC3E4F00EFFD6B /* JavaScriptCore.framework */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		C60CC09B1CEC3EE600EFFD6B /* JVS */ = {
+			isa = PBXGroup;
+			children = (
+				C60CC09C1CEC3EFC00EFFD6B /* JVSContext.h */,
+				C60CC09D1CEC3EFC00EFFD6B /* JVSContext.m */,
+			);
+			path = JVS;
+			sourceTree = "<group>";
+		};
 		C6F147E81CEB751D00434A7A = {
 			isa = PBXGroup;
 			children = (
@@ -58,14 +77,13 @@
 		C6F147F31CEB751D00434A7A /* JARVIS */ = {
 			isa = PBXGroup;
 			children = (
+				C60CC09B1CEC3EE600EFFD6B /* JVS */,
 				C6F147F71CEB751D00434A7A /* AppDelegate.h */,
 				C6F147F81CEB751D00434A7A /* AppDelegate.m */,
 				C6F147FA1CEB751D00434A7A /* ViewController.h */,
 				C6F147FB1CEB751D00434A7A /* ViewController.m */,
-				C6F147FD1CEB751D00434A7A /* Main.storyboard */,
 				C6F148001CEB751D00434A7A /* Assets.xcassets */,
-				C6F148021CEB751D00434A7A /* LaunchScreen.storyboard */,
-				C6F148051CEB751D00434A7A /* Info.plist */,
+				C60CC0981CEC3E3A00EFFD6B /* Libraries */,
 				C6F147F41CEB751D00434A7A /* Supporting Files */,
 			);
 			path = JARVIS;
@@ -74,6 +92,7 @@
 		C6F147F41CEB751D00434A7A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C6F148051CEB751D00434A7A /* Info.plist */,
 				C6F147F51CEB751D00434A7A /* main.m */,
 			);
 			name = "Supporting Files";
@@ -136,9 +155,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C6F148041CEB751D00434A7A /* LaunchScreen.storyboard in Resources */,
 				C6F148011CEB751D00434A7A /* Assets.xcassets in Resources */,
-				C6F147FF1CEB751D00434A7A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,29 +169,11 @@
 				C6F147FC1CEB751D00434A7A /* ViewController.m in Sources */,
 				C6F147F91CEB751D00434A7A /* AppDelegate.m in Sources */,
 				C6F147F61CEB751D00434A7A /* main.m in Sources */,
+				C60CC09E1CEC3EFC00EFFD6B /* JVSContext.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		C6F147FD1CEB751D00434A7A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C6F147FE1CEB751D00434A7A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		C6F148021CEB751D00434A7A /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C6F148031CEB751D00434A7A /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		C6F148061CEB751D00434A7A /* Debug */ = {
@@ -300,6 +299,7 @@
 				C6F1480A1CEB751D00434A7A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
