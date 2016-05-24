@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		C60CC09A1CEC3E4F00EFFD6B /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C60CC0991CEC3E4F00EFFD6B /* JavaScriptCore.framework */; };
 		C60CC09E1CEC3EFC00EFFD6B /* JVSContext.m in Sources */ = {isa = PBXBuildFile; fileRef = C60CC09D1CEC3EFC00EFFD6B /* JVSContext.m */; };
+		C60CC0D91CED8A2100EFFD6B /* JVSUIWebViewContext.m in Sources */ = {isa = PBXBuildFile; fileRef = C60CC0D81CED8A2100EFFD6B /* JVSUIWebViewContext.m */; };
+		C60CC0DC1CED8E5800EFFD6B /* JVSJavaScriptCoreContext.m in Sources */ = {isa = PBXBuildFile; fileRef = C60CC0DB1CED8E5800EFFD6B /* JVSJavaScriptCoreContext.m */; };
+		C60CC0DF1CED902D00EFFD6B /* JVSConvert.m in Sources */ = {isa = PBXBuildFile; fileRef = C60CC0DE1CED902D00EFFD6B /* JVSConvert.m */; };
+		C60CC0E21CED905C00EFFD6B /* JVSBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = C60CC0E11CED905C00EFFD6B /* JVSBridge.m */; };
+		C60CC0E51CED907A00EFFD6B /* JVSClassConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = C60CC0E41CED907A00EFFD6B /* JVSClassConfig.m */; };
+		C60CC0EC1CED935A00EFFD6B /* JVSAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = C60CC0EB1CED935A00EFFD6B /* JVSAlert.m */; };
 		C6F147F61CEB751D00434A7A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C6F147F51CEB751D00434A7A /* main.m */; };
 		C6F147F91CEB751D00434A7A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C6F147F81CEB751D00434A7A /* AppDelegate.m */; };
 		C6F147FC1CEB751D00434A7A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6F147FB1CEB751D00434A7A /* ViewController.m */; };
@@ -19,6 +25,19 @@
 		C60CC0991CEC3E4F00EFFD6B /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		C60CC09C1CEC3EFC00EFFD6B /* JVSContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JVSContext.h; sourceTree = "<group>"; };
 		C60CC09D1CEC3EFC00EFFD6B /* JVSContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JVSContext.m; sourceTree = "<group>"; };
+		C60CC0D71CED8A2100EFFD6B /* JVSUIWebViewContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JVSUIWebViewContext.h; sourceTree = "<group>"; };
+		C60CC0D81CED8A2100EFFD6B /* JVSUIWebViewContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JVSUIWebViewContext.m; sourceTree = "<group>"; };
+		C60CC0DA1CED8E5800EFFD6B /* JVSJavaScriptCoreContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JVSJavaScriptCoreContext.h; sourceTree = "<group>"; };
+		C60CC0DB1CED8E5800EFFD6B /* JVSJavaScriptCoreContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JVSJavaScriptCoreContext.m; sourceTree = "<group>"; };
+		C60CC0DD1CED902D00EFFD6B /* JVSConvert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JVSConvert.h; sourceTree = "<group>"; };
+		C60CC0DE1CED902D00EFFD6B /* JVSConvert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JVSConvert.m; sourceTree = "<group>"; };
+		C60CC0E01CED905C00EFFD6B /* JVSBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JVSBridge.h; sourceTree = "<group>"; };
+		C60CC0E11CED905C00EFFD6B /* JVSBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JVSBridge.m; sourceTree = "<group>"; };
+		C60CC0E31CED907A00EFFD6B /* JVSClassConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JVSClassConfig.h; sourceTree = "<group>"; };
+		C60CC0E41CED907A00EFFD6B /* JVSClassConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JVSClassConfig.m; sourceTree = "<group>"; };
+		C60CC0E61CED908900EFFD6B /* JVSExport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JVSExport.h; sourceTree = "<group>"; };
+		C60CC0EA1CED935A00EFFD6B /* JVSAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JVSAlert.h; sourceTree = "<group>"; };
+		C60CC0EB1CED935A00EFFD6B /* JVSAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JVSAlert.m; sourceTree = "<group>"; };
 		C6F147F11CEB751D00434A7A /* JARVIS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JARVIS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6F147F51CEB751D00434A7A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C6F147F71CEB751D00434A7A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -54,8 +73,28 @@
 			children = (
 				C60CC09C1CEC3EFC00EFFD6B /* JVSContext.h */,
 				C60CC09D1CEC3EFC00EFFD6B /* JVSContext.m */,
+				C60CC0D71CED8A2100EFFD6B /* JVSUIWebViewContext.h */,
+				C60CC0D81CED8A2100EFFD6B /* JVSUIWebViewContext.m */,
+				C60CC0DA1CED8E5800EFFD6B /* JVSJavaScriptCoreContext.h */,
+				C60CC0DB1CED8E5800EFFD6B /* JVSJavaScriptCoreContext.m */,
+				C60CC0DD1CED902D00EFFD6B /* JVSConvert.h */,
+				C60CC0DE1CED902D00EFFD6B /* JVSConvert.m */,
+				C60CC0E01CED905C00EFFD6B /* JVSBridge.h */,
+				C60CC0E11CED905C00EFFD6B /* JVSBridge.m */,
+				C60CC0E31CED907A00EFFD6B /* JVSClassConfig.h */,
+				C60CC0E41CED907A00EFFD6B /* JVSClassConfig.m */,
+				C60CC0E61CED908900EFFD6B /* JVSExport.h */,
 			);
 			path = JVS;
+			sourceTree = "<group>";
+		};
+		C60CC0E91CED933D00EFFD6B /* Armour */ = {
+			isa = PBXGroup;
+			children = (
+				C60CC0EA1CED935A00EFFD6B /* JVSAlert.h */,
+				C60CC0EB1CED935A00EFFD6B /* JVSAlert.m */,
+			);
+			path = Armour;
 			sourceTree = "<group>";
 		};
 		C6F147E81CEB751D00434A7A = {
@@ -78,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				C60CC09B1CEC3EE600EFFD6B /* JVS */,
+				C60CC0E91CED933D00EFFD6B /* Armour */,
 				C6F147F71CEB751D00434A7A /* AppDelegate.h */,
 				C6F147F81CEB751D00434A7A /* AppDelegate.m */,
 				C6F147FA1CEB751D00434A7A /* ViewController.h */,
@@ -168,8 +208,14 @@
 			files = (
 				C6F147FC1CEB751D00434A7A /* ViewController.m in Sources */,
 				C6F147F91CEB751D00434A7A /* AppDelegate.m in Sources */,
+				C60CC0EC1CED935A00EFFD6B /* JVSAlert.m in Sources */,
+				C60CC0DF1CED902D00EFFD6B /* JVSConvert.m in Sources */,
+				C60CC0D91CED8A2100EFFD6B /* JVSUIWebViewContext.m in Sources */,
 				C6F147F61CEB751D00434A7A /* main.m in Sources */,
 				C60CC09E1CEC3EFC00EFFD6B /* JVSContext.m in Sources */,
+				C60CC0E21CED905C00EFFD6B /* JVSBridge.m in Sources */,
+				C60CC0DC1CED8E5800EFFD6B /* JVSJavaScriptCoreContext.m in Sources */,
+				C60CC0E51CED907A00EFFD6B /* JVSClassConfig.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
